@@ -1,0 +1,40 @@
+<div class="form-block">
+
+	<div class="block-header">
+		<div class="block-name"><?php echo $this->lng_m['settings']; ?></div>
+	</div>
+
+	<div class="block-line"></div>
+
+	<div>
+		<form class="form-horizontal" method="POST">
+
+			<div class="control-group">
+				<label class="control-label" for="inputRop"><?php echo $this->lng_m['rop']; ?></label>
+				<div class="controls">
+					<input type="text" name="rop" id="inputRop" value="<?php echo $this->cfg_m['MOD_ROP']; ?>" placeholder="<?php echo $this->lng_m['rop']; ?>" required>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="inputType"><?php echo $this->lng_m['type']; ?></label>
+				<div class="controls">
+					<select name="type" id="inputType">
+						<option value="0"><?php echo $this->lng_m['type_0']; ?></option>
+						<option value="1" <?php echo $data['TYPE']; ?>><?php echo $this->lng_m['type_1']; ?></option>
+					</select>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="inputPrize"><?php echo $this->lng_m['prize']; ?></label>
+				<div class="controls">
+					<input type="text" name="prize" id="inputPrize" value="<?php echo $this->cfg_m['MOD_PRIZE']; ?>" placeholder="<?php echo $this->lng_m['prize']; ?>" required>
+				</div>
+			</div>
+
+			<p class="text-right"><button type="submit" class="btn"><?php echo $this->lng_m['next']; ?></button></p>
+		</form>
+	</div>
+
+</div>

@@ -1,0 +1,52 @@
+<div class="form-block">
+
+	<div class="block-header">
+		<div class="block-name"><?php echo $this->lng_m['mod_name_cp']; ?></div>
+	</div>
+
+	<div class="block-line"></div>
+
+	<div class="adm-us">
+		 
+		<div class="tab-content">
+			<div class="tab-pane active">
+
+				<form class="form-horizontal" method="post">
+
+					<div class="control-group">
+						<label class="control-label" for="input_rop"><?php echo $this->lng_m['rop']; ?></label>
+						<div class="controls">
+							<input type="text" class="span10" name="rop" value="<?php echo $data['CFG']['MOD_ROP']; ?>" id="input_rop" placeholder="<?php echo $this->lng_m['rop']; ?>">
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="input_type"><?php echo $this->lng_m['type']; ?></label>
+						<div class="controls">
+							<select name="type" class="span10" id="input_type">
+								<option value="0"><?php echo $this->lng_m['type_0']; ?></option>
+								<option value="1" <?php echo $data['TYPE']; ?>><?php echo $this->lng_m['type_1']; ?></option>
+							</select>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="input_prize"><?php echo $this->lng_m['prize']; ?></label>
+						<div class="controls">
+							<input type="text" class="span10" name="prize" value="<?php echo $data['CFG']['MOD_PRIZE']; ?>" id="input_prize" placeholder="<?php echo $this->lng_m['prize']; ?>">
+						</div>
+					</div>
+
+					<div class="control-group">
+						<div class="controls">
+							<button type="submit" name="submit" class="btn"><?php echo $this->lng['save']; ?></button>
+						</div>
+					</div>
+
+				</form>
+			
+			</div>
+		</div>
+	</div>
+		
+</div>
