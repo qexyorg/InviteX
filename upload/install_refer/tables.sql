@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `mod_users_comments` (
   `ip` varchar(16) NOT NULL DEFAULT '127.0.0.1',
   `uid` int(10) NOT NULL DEFAULT '0',
   `date` int(10) NOT NULL DEFAULT '0',
-  `status` tinyint(1) NOT NULL DEFAULT '0'
+  `status` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 #line

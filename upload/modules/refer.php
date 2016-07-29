@@ -68,7 +68,8 @@ class module{
 
 		$data = array(
 			"PAGINATION" => $this->core->pagination($this->cfg['MOD_ROP'], '?mode=refer&pid=', $ar[0]),
-			"USERS" => $this->user_array()
+			"USERS" => $this->user_array(),
+			"LINK" => $this->core->cfg->main['s_root_full'].BASE_URL.'?mode=refer&by='.$this->user->id,
 		);
 
 		return $this->core->sp(MCR_THEME_MOD."refer/user-list.html", $data);
