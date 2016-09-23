@@ -105,7 +105,7 @@ class module{
 				$this->db->query("UPDATE `{$this->core->cfg->tabname('ugroups')}` SET `{$ug_f['perm']}`='$newperm' WHERE id='$gid'");
 			}
 
-			$this->core->cfg_m['install'] = false;
+			$this->core->cfg_m['MOD_INSTALL'] = false;
 
 			if(!$this->cfg->savecfg($this->core->cfg_m, 'modules/refer.php', 'cfg')){
 				$this->core->notify($this->lng['e_msg'], $this->lng_m['e_settings'], 2, '?mode=step_3');

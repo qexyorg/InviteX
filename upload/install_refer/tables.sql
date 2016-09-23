@@ -3,7 +3,7 @@ INSERT INTO `mcr_permissions` (`title`, `description`, `value`, `system`, `type`
 ('Доступ к рефералам', 'Дает доступ к реферальной системе', 'mod_refer_list', 0, 'boolean', 'false', '{"time_create":1005553535,"time_last":1005553535,"login_create":"admin","login_last":"admin"}'),
 ('Доступ к настройкам InviteX', 'Дает доступ к панели управления реферальной системе', 'mod_refer_adm_settings', 0, 'boolean', 'false', '{"time_create":1005553535,"time_last":1005553535,"login_create":"admin","login_last":"admin"}');
 #line
-CREATE TABLE IF NOT EXISTS `mod_users_comments` (
+CREATE TABLE IF NOT EXISTS `mod_ref_users` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `ip` varchar(16) NOT NULL DEFAULT '127.0.0.1',
   `uid` int(10) NOT NULL DEFAULT '0',
